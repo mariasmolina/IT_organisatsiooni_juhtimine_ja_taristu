@@ -1,11 +1,19 @@
 import json
 
+def get_valid_email():
+    while True:
+        email = input("Sisestage e-mail: ")
+        if "@" in email:
+            return email
+        print("❌ Vigane e-mail! Palun sisestage korrektne e-mail.")
+
+
 company_name = input("sistage ettevõtte nimi: ")
 contact_email = input("sistage e-mail: ")
 data_collection = input("milliseid andmeid kogutakse? ")
 data_usage = input("Kuidas andmed kasutatakse? ")
 data_retention = input("Kui kaua need hoiatakse? ")
-
+cookies = input("Kas teie veebileht kasutab küpsiseid? (jah/ei): ")
 
 privacy_data = {
     "company_name": company_name,
@@ -13,6 +21,7 @@ privacy_data = {
     "data_collection": data_collection,
     "data_usage": data_usage,
     "data_retention": data_retention,
+    "cookies": cookies
 }
 
 
@@ -38,6 +47,8 @@ html_template = """<!DOCTYPE html>
     <p>{data_usage}</p>
     <h2>Kui kaua me andmeid säilitame?</h2>
     <p>{data_retention}</p>
+    <h2>Kas me kasutame küpsiseid?</h2>
+    <p>{cookies}</p>
 </body>
 </html>"""
 
