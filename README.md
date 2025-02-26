@@ -1,6 +1,6 @@
 # IT Organisatsiooni Juhtimine ja Taristu
 
-See repo sisaldab kõiki minu töid, mis on seotud **IT organisatsiooni juhtimise ja taristu** projektiga. Siit leiad erinevaid ülesandeid, materjale ja dokumente, mis on osa minu tööst sellel projektil.
+See repo sisaldab kõiki minu töid, mis on seotud õppeainega **IT organisatsiooni juhtimine ja taristu**. Siit leiad erinevaid ülesandeid, materjale ja dokumente.
 
 ## Sisu
 
